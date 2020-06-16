@@ -240,6 +240,8 @@ def play_move(temp_board, x, y, owner):
 
 def minimax(temp_board, depth, maximizing_player):
 
+
+
     #I am done creating the tree, or there are no future actions
     # game_over() is needed as I dont want the bot to go into the recursive steps and have a coin toss between infinity and -infinity based on whose turn it is.
     if depth == 0 or game_over(temp_board):
@@ -268,7 +270,7 @@ def minimax(temp_board, depth, maximizing_player):
 
                 if depth == DEPTH:
                     global best
-                    best = good
+                    best = action
 
 
         
